@@ -3,27 +3,14 @@ package pro.sky.skypro18;
 import java.util.Objects;
 
 public class Employee {
-    private final int id;
-    private static int idCounter;
+
     private String lastName;
     private String firstName;
 
-    public Employee(int id,String lastName, String firstName) {
+    public Employee(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.id = ++idCounter;
-    }
 
-    public static int getIdCounter() {
-        return idCounter;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public static void setIdCounter(int idCounter) {
-        Employee.idCounter = idCounter;
     }
 
     public String getLastName() {
