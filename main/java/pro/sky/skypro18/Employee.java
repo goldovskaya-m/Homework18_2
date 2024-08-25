@@ -6,10 +6,14 @@ public class Employee {
 
     private String lastName;
     private String firstName;
+    private int departmentId;
+    private double salary;
 
     public Employee(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
+        this.departmentId = getDepartmentId();
+        this.salary = getSalary();
 
     }
 
@@ -24,6 +28,13 @@ public class Employee {
         return firstName + " " + lastName;
     }
 
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
 
     public String getAllFields() {
         return " ФИО " + lastName + firstName;
