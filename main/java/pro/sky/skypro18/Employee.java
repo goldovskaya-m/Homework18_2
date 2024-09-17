@@ -1,5 +1,7 @@
 package pro.sky.skypro18;
 
+import org.apache.catalina.util.StringUtil;
+
 import java.util.Objects;
 
 public class Employee {
@@ -10,6 +12,7 @@ public class Employee {
     private double salary;
 
     public Employee(String lastName, String firstName) {
+
         this.lastName = lastName;
         this.firstName = firstName;
         this.departmentId = getDepartmentId();
