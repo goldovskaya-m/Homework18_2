@@ -1,23 +1,15 @@
 package pro.sky.skypro18.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import pro.sky.skypro18.Employee;
-import pro.sky.skypro18.controller.DepartmentController;
+import pro.sky.skypro18.model.Employee;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Consumer;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.Locale.filter;
-import static org.apache.logging.log4j.ThreadContext.peek;
 
 
 @Service

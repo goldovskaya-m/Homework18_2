@@ -1,6 +1,6 @@
 package pro.sky.skypro18.service;
 
-import pro.sky.skypro18.Employee;
+import pro.sky.skypro18.model.Employee;
 
 import java.util.Collection;
 

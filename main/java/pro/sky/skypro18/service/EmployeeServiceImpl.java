@@ -1,8 +1,9 @@
-package pro.sky.skypro18;
+package pro.sky.skypro18.service;
 
 import org.springframework.stereotype.Service;
+import pro.sky.skypro18.exception.EmployeeAlreadyAddedException;
 import pro.sky.skypro18.exception.EmployeeNotFoundException;
-import pro.sky.skypro18.service.EmployeeService;
+import pro.sky.skypro18.model.Employee;
 
 import java.util.*;
 
