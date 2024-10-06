@@ -1,29 +1,21 @@
-package pro.sky.skypro18;
+package pro.sky.skypro18.model;
 
 import java.util.Objects;
 
 public class Employee {
-    private final int id;
-    private static int idCounter;
+
     private String lastName;
     private String firstName;
+    private int departmentId;
+    private double salary;
 
-    public Employee(int id,String lastName, String firstName) {
+    public Employee(String lastName, String firstName) {
+
         this.lastName = lastName;
         this.firstName = firstName;
-        this.id = ++idCounter;
-    }
+        this.departmentId = getDepartmentId();
+        this.salary = getSalary();
 
-    public static int getIdCounter() {
-        return idCounter;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public static void setIdCounter(int idCounter) {
-        Employee.idCounter = idCounter;
     }
 
     public String getLastName() {
@@ -33,7 +25,17 @@ public class Employee {
     public String getFirstName() {
         return firstName;
     }
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
 
     public String getAllFields() {
         return " ФИО " + lastName + firstName;
